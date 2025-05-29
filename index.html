@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Merlin&Morgana - Crônicas Cósmicas</title>
     <style>
-        /* CSS básico para layout */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #fff;
+            background-color: #fff;
             color: #222;
             padding: 20px;
         }
@@ -28,6 +27,7 @@
             display: flex;
             justify-content: center;
             gap: 2rem;
+            margin-bottom: 2rem;
         }
         nav a {
             color: white;
@@ -41,33 +41,28 @@
         nav a:hover {
             border-bottom: 2px solid #FF851B; /* laranja suave */
         }
-
         main {
-            max-width: 1000px;
-            margin: 2rem auto;
+            max-width: 1100px;
+            margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
         }
-
         section {
             background: #f9f9f9;
             border-radius: 8px;
-            padding: 1rem 1.5rem;
-            box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+            padding: 1.5rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
-
         section h2 {
             color: #001F3F;
             margin-top: 0;
             font-size: 1.5rem;
         }
-
         p {
             line-height: 1.6;
             font-size: 1rem;
         }
-
         img, video {
             max-width: 100%;
             height: auto;
@@ -75,11 +70,9 @@
             margin-top: 1rem;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-
         video {
             display: block;
         }
-
         @media (max-width: 600px) {
             nav {
                 flex-direction: column;
@@ -92,7 +85,6 @@
     </style>
 </head>
 <body>
-
 <header>
     <h1>Merlin&amp;Morgana - Crônicas Cósmicas</h1>
     <nav>
@@ -102,7 +94,6 @@
         <a href="#imagens">Imagens</a>
     </nav>
 </header>
-
 <main>
     <section id="introducao">
         <h2>Bem-vindo ao mundo da Astrologia</h2>
@@ -111,7 +102,6 @@
             Aqui, exploraremos os conceitos básicos e as maravilhas do cosmos, revelando o que os astros têm a dizer sobre nós.
         </p>
     </section>
-
     <section id="astrologia">
         <h2>Conceitos-chave</h2>
         <p>
@@ -121,7 +111,6 @@
             As interpretações podem variar conforme a tradição, mas a essência permanece: compreender como a energia cósmica interage com a vida humana.
         </p>
     </section>
-
     <section id="videos">
         <h2>Vídeos Cósmicos</h2>
         <video controls preload="metadata" poster="video-poster.jpg">
@@ -133,16 +122,14 @@
             Seu navegador não suporta vídeo HTML5.
         </video>
     </section>
-
     <section id="imagens">
         <h2>Galeria de Imagens</h2>
         <img src="imagem1.jpg" alt="Imagem relacionada à astrologia 1" />
         <img src="imagem2.jpg" alt="Imagem relacionada à astrologia 2" />
     </section>
 </main>
-
 <script>
-    // Script básico para scroll suave no menu
+    // Scroll suave para os links do menu
     document.querySelectorAll('nav a').forEach(anchor => {
         anchor.addEventListener('click', e => {
             e.preventDefault();
@@ -152,6 +139,5 @@
         });
     });
 </script>
-
 </body>
 </html>
