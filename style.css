@@ -5,11 +5,11 @@
   box-sizing: border-box;
 }
 
-/* Corpo centralizado com máximo e fundo suave */
+/* Corpo centralizado com fundo moderno */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(120deg, #f4f7fa 0%, #e9e3f6 100%);
-  color: #222;
+  background: linear-gradient(120deg, #191825 0%, #865DFF 100%);
+  color: #F7EFE5;
   line-height: 1.7;
   padding: 0 20px 40px;
   max-width: 1200px;
@@ -17,14 +17,14 @@ body {
   min-height: 100vh;
 }
 
-/* Cabeçalho elegante */
+/* Cabeçalho elegante e ousado */
 header {
-  background: linear-gradient(90deg, #0b1a3f 70%, #2e386b 100%);
-  color: #f0e6f7;
+  background: linear-gradient(90deg, #865DFF 60%, #191825 100%);
+  color: #fff;
   padding: 38px 28px 32px;
   text-align: center;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
-  border-radius: 18px 18px 12px 12px;
+  box-shadow: 0 8px 32px rgba(70, 0, 130, 0.17);
+  border-radius: 24px 24px 18px 18px;
   margin: 32px 0 12px;
   position: relative;
   overflow: hidden;
@@ -36,7 +36,7 @@ header::after {
   inset: 0;
   pointer-events: none;
   background: url('https://www.transparenttextures.com/patterns/diamond-upholstery.png');
-  opacity: 0.18;
+  opacity: 0.14;
 }
 
 h1 {
@@ -50,7 +50,7 @@ h1 {
 
 header p {
   font-size: 1.25rem;
-  color: #d5c8ee;
+  color: #E0C3FC;
   margin-top: 8px;
   opacity: 0.98;
   font-weight: 400;
@@ -60,6 +60,7 @@ main {
   margin-top: 36px;
 }
 
+/* Layout de colunas moderno */
 .content-columns {
   display: flex;
   gap: 36px;
@@ -67,25 +68,26 @@ main {
   margin-bottom: 56px;
 }
 
-/* Colunas modernizadas */
+/* Colunas destacadas */
 .column {
   flex: 1;
-  background: rgba(249, 248, 252, 0.96);
+  background: rgba(34, 34, 50, 0.92);
   padding: 28px 22px;
-  border-radius: 16px;
-  box-shadow: 0 3px 18px rgba(11, 26, 63, 0.10), 0 1.5px 7px rgba(50, 50, 90, 0.05);
-  border: 1.5px solid #ece6f3;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(70, 0, 130, 0.13);
+  border: 1.5px solid #3D246C;
+  color: #E6E6FA;
   transition: box-shadow 0.25s, transform 0.18s;
 }
 
 .column:hover {
-  box-shadow: 0 8px 28px rgba(11, 26, 63, 0.13), 0 2px 12px #b5b9ee33;
-  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 12px 36px rgba(134, 93, 255, 0.23), 0 3px 16px #865DFF33;
+  transform: translateY(-3px) scale(1.025);
 }
 
 .column h2 {
   font-family: 'Cinzel', serif;
-  color: #201a5d;
+  color: #865DFF;
   margin-bottom: 17px;
   font-size: 1.46rem;
   letter-spacing: 1px;
@@ -94,16 +96,16 @@ main {
 .column p {
   font-size: 1.13rem;
   margin-bottom: 16px;
-  color: #3d3854;
+  color: #F7EFE5;
   line-height: 1.7;
 }
 
 .column img,
 .column video {
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: 16px;
   margin-top: 18px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 4px 18px rgba(134, 93, 255, 0.15);
   display: block;
   transition: transform 0.23s, box-shadow 0.23s;
 }
@@ -111,12 +113,13 @@ main {
 .column img:hover,
 .column video:hover {
   transform: scale(1.045);
-  box-shadow: 0 8px 32px rgba(11, 26, 63, 0.22);
+  box-shadow: 0 12px 32px #865DFF44;
 }
 
+/* Galeria e media */
 .media-gallery h2 {
   font-family: 'Cinzel', serif;
-  color: #251b60;
+  color: #FFB86F;
   margin-bottom: 22px;
   text-align: center;
   font-size: 1.35rem;
@@ -134,43 +137,67 @@ main {
 .gallery-grid video {
   width: 100%;
   min-height: 180px;
-  border-radius: 12px;
-  box-shadow: 0 3px 13px rgba(0, 0, 0, 0.10);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px #865dff22;
   object-fit: cover;
-  background: #e3e1ef;
+  background: #312e46;
   transition: transform 0.21s, box-shadow 0.21s;
 }
 
 .gallery-grid img:hover,
 .gallery-grid video:hover {
   transform: scale(1.04);
-  box-shadow: 0 9px 32px rgba(11, 26, 63, 0.19);
+  box-shadow: 0 16px 40px #865DFF33;
   z-index: 2;
 }
 
-/* Rodapé destacado e limpo */
+/* Rodapé destacado */
 footer {
   margin-top: 48px;
   text-align: center;
-  color: #888;
+  color: #B8B8D1;
   font-size: 1.02rem;
-  padding: 22px 0 12px;
-  border-top: 1.5px solid #e9e3f6;
-  background: rgba(249, 248, 252, 0.98);
-  border-radius: 0 0 14px 14px;
-  box-shadow: 0 -2px 9px #b5b9ee1a;
+  padding: 24px 0 14px;
+  border-top: 1.5px solid #312e46;
+  background: rgba(34, 34, 50, 0.98);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 -2px 12px #865dff1a;
 }
 
-/* Pequenos detalhes */
+/* Links modernos */
 a {
-  color: #3e2fa7;
+  color: #FFB86F;
   text-decoration: none;
-  transition: color 0.18s;
+  transition: color 0.22s, text-shadow 0.22s;
 }
 
 a:hover {
-  color: #6d4aff;
+  color: #F7EFE5;
+  text-shadow: 0 0 8px #865DFF77;
   text-decoration: underline;
+}
+
+/* Botões modernos */
+button, .btn {
+  background: linear-gradient(90deg, #865DFF 60%, #FFB86F 100%);
+  color: #191825;
+  border: none;
+  border-radius: 16px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.17s, box-shadow 0.17s;
+  box-shadow: 0 2px 12px #865DFF33;
+}
+button:hover, .btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 28px #865DFF44;
+}
+
+/* Espaçamento extra entre seções */
+main, .content-columns, .gallery-grid {
+  margin-bottom: 48px;
 }
 
 /* Responsividade */
@@ -191,31 +218,25 @@ a:hover {
   body {
     padding: 0 2vw 24px;
   }
-
   header {
     padding: 16px 2vw 12px;
     font-size: 0.96rem;
   }
-
   .column {
     padding: 14px 7px;
   }
-
   .gallery-grid {
     gap: 13px;
     grid-template-columns: 1fr;
   }
-
   h1 {
     font-size: 2.1rem;
   }
-
   .media-gallery h2 {
     font-size: 1.05rem;
   }
-
   footer {
     font-size: 0.98rem;
     padding: 13px 0 6px;
   }
-}
+  }
